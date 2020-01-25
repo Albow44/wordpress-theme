@@ -1,5 +1,5 @@
 /*!
-Theme Name: hashtag_
+Theme Name: hashtag
 Theme URI: http://underscores.me/
 Author: Alan Arthur Aumiller II
 Author URI: https://github.com/Albow44
@@ -54,7 +54,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
-html {
+ html {
 	line-height: 1.15; /* 1 */
 	-webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -982,4 +982,105 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/* Modified via assignment 1/21/20 */
+
+body{
+
+	background-color: rgb(206, 206, 206);
+}
+.site-header {
+	text-align: center;
+	color: white;
+	background-color: rgb(77, 6, 6);
+}
+
+.site-header a{
+	text-decoration: none;
+	color: white;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
+	
+}
+
+.site-title, .site-description{ 
+	padding-left: 30px;
+}
+
+.site-header a:hover{
+	/* background-color: rgb(77, 6, 6); */
+	color: rgba(97, 94, 94, 0.808);
+}
+
+.main-navigation{
+	background-color: rgb(0, 0, 0);
+	Display: flex;
+	Justify-content: center;
+}
+
+.main-navigation a{
+	font-weight: bold;
+	color: white;
+	margin-left: 25px;
+	padding: 5px;
+	text-align: center;
+}
+
+.site-content{
+	padding: 15px
+}
+
+.content-area{
+float: left;
+}
+
+.widget-area{
+	background-color: rgba(77, 6, 6, 0.966);;
+	width: 350px;
+	padding: 30px;
+	float: right;
+	border: solid 3px;
+	border-color: black;
+	color: rgb(255, 255, 255);
+}
+.widget-area ul{
+	margin-left: -10px;
+}
+
+.widget-area a{
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.widget-area a:hover{
+	color: rgba(97, 94, 94, 0.808);
+	
+}
+.widget-title{
+	text-decoration: underline;
+	color: rgb(255, 255, 255);
+}
+
+.site-footer{
+	background-color: rgb(77, 6, 6);
+	color: white;
+	padding-left: 30px;
+	text-align: center;
+}
+
+.site-footer a{
+	color: white;
+	font-weight: bold;
+	text-decoration: none;
+	text-align: center;
+}
+
+.site-main{
+
+	box-align: center;
+	padding-left: 650px;
+	padding-top: 100px;
 }
