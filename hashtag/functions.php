@@ -79,9 +79,19 @@ if ( ! function_exists( 'hashtag_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+		
+		add_theme_support( 'custom-header',
+		$args = array(
+			'flex-width'    => true,
+			'width'         => 1200,
+			'flex-height'   => true,
+			'height'        => 200,
+			'default-image' => get_template_directory_uri() . '/images/header.jpg',
+		));
 	}
+	
 endif;
-add_action( 'after_setup_theme', 'hashtag_setup' );
+add_action( 'after_setup_theme', 'hashtag_setup','hashtag_custom_header_setup' );
 
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
@@ -131,6 +141,8 @@ function hashtag_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'hashtag_scripts' );
+
+add_theme_support( 'post-formats',  array ( 'aside', 'gallery', 'quote', 'image', 'video' ) );
 
 /**
  * Implement the Custom Header feature.
